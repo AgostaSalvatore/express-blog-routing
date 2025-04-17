@@ -10,7 +10,7 @@ const port = 3000;
 //importo il router
 const postsRouter = require('./router/postsRouter.js');
 
-
+//vado ad utilizzare postsRouter per creare le rotte
 app.use('/posts', postsRouter);
 
 //home
