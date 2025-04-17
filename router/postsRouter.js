@@ -16,5 +16,10 @@
     router.get('/:id', (req,res) =>{
         res.send(`dettaglio del post ${req.params.id}`);
     });
+    
+    //store
+    router.post('/',(req,res) =>{
+        res.send('Inserimento totale dei posts');
+    })
 
     module.exports = router;
