@@ -10,11 +10,12 @@ const port = 3000;
 //importo il router
 const postsRouter = require('./router/postsRouter.js');
 
+
 app.use('/posts', postsRouter);
 
 //home
 app.get('/', (req,res) =>{
-    res.send('Home');
+    res.send('Blog con vari post');
 });
 
 

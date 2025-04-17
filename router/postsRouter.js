@@ -8,8 +8,8 @@
     const posts = require('../posts.js')
 
     //index
-    router.get('/:id', (req,res) =>{
-        res.send('Lista dei posts')
+    router.get('/', (req,res) =>{
+        res.json(posts)
     });
 
     //show
@@ -19,7 +19,7 @@
     
     //store
     router.post('/',(req,res) =>{
-        res.send('Inserimento totale dei posts');
+        res.send('Inserimento di un nuovo post');
     })
 
     //update
@@ -33,7 +33,7 @@
     });
 
     //destroy
-    router.patch('/:id', (req,res) =>{
+    router.delete('/:id', (req,res) =>{
         res.send(`Eliminazione del post ${req.params.id}`);
     });
 
