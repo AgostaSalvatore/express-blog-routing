@@ -12,4 +12,9 @@
         res.send('Lista dei posts')
     });
 
+    //show
+    router.get('/:id', (req,res) =>{
+        res.send(`dettaglio del post ${req.params.id}`);
+    });
+
     module.exports = router;
