@@ -11,3 +11,8 @@ const port = 3000;
 app.get('/', (req,res) =>{
     res.send('Home');
 });
+
+//inizializzo il listen del server sulla porta 3000
+app.listen(port, ()=>{
+    console.log(`server listening on port ${port}`);
+})
